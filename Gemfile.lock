@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/Shopify/shipit-engine.git
-  revision: 313d0044b7ccb29411c9f6b18c1c4e77822d7f20
+  revision: d5a0f148a07dc4cc5ec5cee238ad68f71b6a8fa7
   specs:
     shipit-engine (0.1.0)
       active_model_serializers (~> 0.9.3)
@@ -169,6 +169,8 @@ GEM
       eventmachine (~> 1.0)
       redis (~> 3.0)
       sinatra (~> 1.4)
+    puma (2.11.3)
+      rack (>= 1.1, < 2.0)
     rack (1.6.2)
     rack-protection (1.5.3)
       rack
@@ -291,6 +293,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mina (~> 0.3.4)
+  puma (~> 2.11.3)
   rails (= 4.2.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
