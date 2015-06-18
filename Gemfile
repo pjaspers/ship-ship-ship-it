@@ -29,8 +29,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# Use Mina for deployment
+gem "mina", "~> 0.3.4"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -43,7 +43,9 @@ group :development, :test do
   gem 'spring'
 end
 
-
+# Autoload dotenv in Rails.
+# [dotenv-rails](https://github.com/bkeepers/dotenv)
+gem "dotenv-rails", "~> 2.0.1"
 gem 'sidekiq'
 gem 'thin'
 gem 'shipit-engine', github: 'Shopify/shipit-engine'

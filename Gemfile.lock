@@ -97,6 +97,9 @@ GEM
     debug_inspector (0.0.2)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
+    dotenv (2.0.1)
+    dotenv-rails (2.0.1)
+      dotenv (= 2.0.1)
     em-hiredis (0.3.0)
       eventmachine (~> 1.0)
       hiredis (~> 0.5.0)
@@ -133,6 +136,9 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.6.1)
+    mina (0.3.4)
+      open4 (~> 1.3.4)
+      rake
     mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.11.1)
@@ -157,6 +163,7 @@ GEM
     omniauth-oauth2 (1.3.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
+    open4 (1.3.4)
     pubsubstub (0.0.14)
       em-hiredis (~> 0.2)
       eventmachine (~> 1.0)
@@ -280,8 +287,10 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  dotenv-rails (~> 2.0.1)
   jbuilder (~> 2.0)
   jquery-rails
+  mina (~> 0.3.4)
   rails (= 4.2.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
